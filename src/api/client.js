@@ -37,6 +37,12 @@ export const api = {
     createProblem: async (payload) => {
         const response = await client.post(`/problem`, payload);
         return response.data;
+    },
+
+    // Leaderboard Endpoint
+    getLeaderboard: async () => {
+        const response = await client.get(`/leaderboard`);
+        return response.data;
     }
 };
 

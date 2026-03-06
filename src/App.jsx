@@ -5,6 +5,7 @@ import TeamDetail from './pages/TeamDetail';
 import QualifierRound5 from './pages/QualifierRound5';
 import QualifierTeamStatus from './pages/QualifierTeamStatus';
 import CreateProblem from './pages/CreateProblem';
+import Leaderboard from './pages/Leaderboard';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
 
         {/* Create Problem */}
         <Route path="/create-problem" element={<CreateProblem />} />
+
+        {/* Leaderboard */}
+        <Route path="/leaderboard" element={<Leaderboard />} />
       </Routes>
     </BrowserRouter>
   );

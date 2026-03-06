@@ -73,6 +73,25 @@ const Dashboard = () => {
                         <p>Add a new coding problem</p>
                     </div>
                 </Link>
+
+                {/* View Leaderboard */}
+                <Link
+                    to="/leaderboard"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="card glass-panel"
+                    style={{ textDecoration: 'none', color: 'inherit', borderColor: '#FFD700' }}
+                >
+                    <div className="card-header">
+                        <h2 className="card-title">Live Leaderboard</h2>
+                        <div className="card-icon" style={{ color: '#FFD700', background: 'rgba(255, 215, 0, 0.1)' }}>
+                            <Trophy size={24} />
+                        </div>
+                    </div>
+                    <div className="card-body">
+                        <p>View live team rankings and scores</p>
+                    </div>
+                </Link>
             </div>
         </div>
     );
